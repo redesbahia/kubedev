@@ -3,6 +3,19 @@ Get the Pods from all namespaces.
 
 Write down its content.
 
+$ kubectl get pods --all-namespaces 
+NAMESPACE     NAME                                      READY   STATUS             RESTARTS   AGE
+kube-system   metrics-server-86cbb8457f-489wv           1/1     Running            0          48d
+kube-system   local-path-provisioner-7c458769fb-thnnf   1/1     Running            0          48d
+kube-system   coredns-854c77959c-dcjlb                  1/1     Running            0          48d
+kube-system   helm-install-traefik-zf6hl                0/1     Completed          0          48d
+kube-system   svclb-traefik-7m52r                       2/2     Running            0          20m
+kube-system   svclb-traefik-s6flp                       2/2     Running            0          20m
+kube-system   svclb-traefik-lt4d5                       2/2     Running            0          20m
+kube-system   traefik-6f9cbd9bd4-vp7mw                  1/1     Running            0          20m
+
+
+
 ### Question 2
 Create a namespace called ns-2.
 
